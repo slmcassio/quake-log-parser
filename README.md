@@ -1,0 +1,1 @@
+https://gist.github.com/akitaonrails/97310463c52467d2ecc6#file-games-log
