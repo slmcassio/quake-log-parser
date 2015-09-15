@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Deals with the kill count for a given Player.
+ * Deals with the death count for a given Player.
  */
 public class Deaths {
 

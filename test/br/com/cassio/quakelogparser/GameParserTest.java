@@ -1,6 +1,6 @@
 package br.com.cassio.quakelogparser;
 
-import static br.com.cassio.quakelog.parser.GameSplitter.split;
+import static br.com.cassio.quakelog.parser.components.GameSplitter.split;
 
 import java.util.ArrayList;
 import java.util.List;

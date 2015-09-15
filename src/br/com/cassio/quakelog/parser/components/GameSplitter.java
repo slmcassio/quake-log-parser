@@ -1,7 +1,7 @@
-package br.com.cassio.quakelog.parser;
+package br.com.cassio.quakelog.parser.components;
 
-import static br.com.cassio.quakelog.parser.GameReferences.GAME_START_PATTERN;
-import static br.com.cassio.quakelog.parser.GameReferences.buildLinePatternFor;
+import static br.com.cassio.quakelog.parser.components.GameReferences.GAME_START_PATTERN;
+import static br.com.cassio.quakelog.parser.components.GameReferences.buildLinePatternFor;
 
 import java.util.ArrayList;
 import java.util.List;

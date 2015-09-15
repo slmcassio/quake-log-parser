@@ -8,7 +8,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
-public class FileReader {
+public class Reader {
 
 	/**
 	 * Extract the lines of the file on the given path.
@@ -17,8 +17,8 @@ public class FileReader {
 	 *            The given path.
 	 * @return A line {@link List}.
 	 */
-	public static List<String> extractLines(final String path) {
-		return new FileReader().getAllLines(path);
+	public static List<String> readFile(final String path) {
+		return new Reader().getAllLines(path);
 	}
 
 	/**

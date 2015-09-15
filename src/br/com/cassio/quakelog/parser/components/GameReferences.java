@@ -1,10 +1,10 @@
-package br.com.cassio.quakelog.parser;
+package br.com.cassio.quakelog.parser.components;
 
 import java.util.regex.Pattern;
 
 public class GameReferences {
 
-	private static final String TIME_PATTERN = "([0-9]*[0-9]:[0-5][0-9])"; // TODO: improve pattern with more examples
+	private static final String TIME_PATTERN = "([0-9]*[0-9]:[0-5][0-9])"; // TODO: improve pattern when more examples got available
 
 	public static final String GAME_START_PATTERN = "InitGame";
 
