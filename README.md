@@ -2,7 +2,7 @@ Setup
 ----------------------------------------------------------
 On command line run: `java -jar path/to/quake-log-parser.jar`
 
-**Java 8 is required**
+**Java 8 required!**
 
 
 Solution
