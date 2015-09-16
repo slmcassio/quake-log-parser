@@ -17,7 +17,7 @@ The solution was based on three major rules:
 
 3. Analyze the `Kill` line based on the information retrieved from Step2 and discover the **UserName** of the players based on the **UserId**<br />
 		
-    3.1. e.g. `22:06 Kill: 2 3 7 ...`<br />
+    3.1. e.g. `22:06 Kill: 2 3 7`<br />
 
     3.1.2. The number 2 represents the **UserId** of the killer player.<br />
 				
