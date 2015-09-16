@@ -19,11 +19,11 @@ The solution was based on three major rules:
 		
     3.1. e.g. `Kill: 2 3 7`
 
-    3.1.2. The number 2 represents the **UserId** of the killer player.
+    3.1.1. The number 2 represents the **UserId** of the killer player.
 				
-    3.1.3. The number 3 represents the **UserId** of the dead player.
+    3.1.2. The number 3 represents the **UserId** of the dead player.
 				
-    3.1.4. The number 7 represents an item on the  **MeansOfDeath** list.
+    3.1.3. The number 7 represents an item on the  **MeansOfDeath** list.
 		
 		
 The information extracted from the rules where used to generate some *Classes*:		
