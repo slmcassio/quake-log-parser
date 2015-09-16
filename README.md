@@ -24,7 +24,8 @@ The solution was based on three major rules:
     3.1.3. The number 3 represents the **UserId** of the dead player.
 				
     3.1.4. The number 7 represents an item on the  **MeansOfDeath** list.
-				
+		
+		
 The information extracted from the rules where used to generate some *Classes*:		
 		
 1. **Game:** holds all information from a single game.
