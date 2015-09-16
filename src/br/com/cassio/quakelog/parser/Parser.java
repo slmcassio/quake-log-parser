@@ -28,8 +28,19 @@ public class Parser {
 		final String path = new Scanner(System.in).next();
 
 		final List<String> allLogLines = readFile(path);
+		if (allLogLines.isEmpty()) {
+			return;
+		}
+
 		final List<SingleGameLog> singleGameLogs = split(allLogLines);
+		if (singleGameLogs.isEmpty()) {
+			return;
+		}
+
 		final List<Game> games = parse(singleGameLogs);
+		if (singleGameLogs.isEmpty()) {
+			return;
+		}
 
 		printGames(games);
 	}

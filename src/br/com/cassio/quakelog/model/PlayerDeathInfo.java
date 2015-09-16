@@ -10,7 +10,7 @@ public class PlayerDeathInfo {
 
 	private final Player player;
 
-	private final Map<DeathType, Integer> deathTypes;
+	private final Map<DeathType, Integer> countByDeathType;
 
 	/**
 	 * The constructor.
@@ -20,7 +20,7 @@ public class PlayerDeathInfo {
 	 */
 	public PlayerDeathInfo(final Player player) {
 		this.player = player;
-		this.deathTypes = new HashMap<>();
+		this.countByDeathType = new HashMap<>();
 	}
 
 	/**
@@ -37,19 +37,19 @@ public class PlayerDeathInfo {
 	 * 
 	 * @return The {@link DeathType} {@link Map}.
 	 */
-	public Map<DeathType, Integer> getDeathTypes() {
-		return this.deathTypes;
+	public Map<DeathType, Integer> getCountByDeathType() {
+		return this.countByDeathType;
 	}
 
 	/**
 	 * Increments the count by 1.
 	 */
 	public void addDeathType(final DeathType deathType) {
-		if (!this.deathTypes.containsKey(deathType)) {
-			this.deathTypes.put(deathType, 0);
+		if (!this.countByDeathType.containsKey(deathType)) {
+			this.countByDeathType.put(deathType, 0);
 		}
 
-		final Integer previousValue = this.deathTypes.get(deathType);
-		this.deathTypes.put(deathType, previousValue + 1);
+		final Integer previousValue = this.countByDeathType.get(deathType);
+		this.countByDeathType.put(deathType, previousValue + 1);
 	}
 }

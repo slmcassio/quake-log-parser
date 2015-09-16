@@ -27,7 +27,7 @@ public class Printer {
 	 */
 	public static void printGames(final List<Game> games) {
 		final Printer printer = new Printer();
-		printer.printGeneralInfo(games);
+		printer.printOverallInfo(games);
 		printer.printGameInfo(games);
 	}
 
@@ -37,7 +37,7 @@ public class Printer {
 	 * @param games
 	 *            The given {@link Game} {@link List}.
 	 */
-	private void printGeneralInfo(final List<Game> games) {
+	private void printOverallInfo(final List<Game> games) {
 		System.out.println("Overall: {");
 
 		final Map<String, Integer> killsByName = groupKillsByPlayers(games);
@@ -223,9 +223,9 @@ public class Printer {
 		final Map<DeathType, Integer> countByDeathType = new HashMap<>();
 
 		for (final PlayerDeathInfo playerDeathInfo : playerDeathInfos) {
-			final Map<DeathType, Integer> countByDeathTypes = playerDeathInfo.getDeathTypes();
+			final Map<DeathType, Integer> playerCountByDeathTypes = playerDeathInfo.getCountByDeathType();
 
-			for (final Entry<DeathType, Integer> entry : countByDeathTypes.entrySet()) {
+			for (final Entry<DeathType, Integer> entry : playerCountByDeathTypes.entrySet()) {
 				final DeathType deathType = entry.getKey();
 				final Integer count = entry.getValue();
 

@@ -42,18 +42,18 @@ public class GameParserTest {
 	@Test
 	public void shouldGenerateEntriesWithNames() {
 		final List<SingleGameLog> splitGames = split(this.allLogLines);
-		Assert.assertEquals(splitGames.get(0).getName(), "game-1");
-		Assert.assertEquals(splitGames.get(1).getName(), "game-2");
+		Assert.assertEquals("game-1", splitGames.get(0).getName());
+		Assert.assertEquals("game-2", splitGames.get(1).getName());
 	}
 
 	@Test
 	public void shouldGenerateEntriesWithLines() {
 		final List<SingleGameLog> splitGames = split(this.allLogLines);
-		Assert.assertEquals(splitGames.get(0).getLogLines().size(), 2);
-		Assert.assertEquals(splitGames.get(1).getLogLines().size(), 1);
+		Assert.assertEquals(2, splitGames.get(0).getLogLines().size());
+		Assert.assertEquals(1, splitGames.get(1).getLogLines().size());
 
-		Assert.assertEquals(splitGames.get(0).getLogLines().get(0), LINE_1);
-		Assert.assertEquals(splitGames.get(0).getLogLines().get(1), LINE_2);
-		Assert.assertEquals(splitGames.get(1).getLogLines().get(0), LINE_3);
+		Assert.assertEquals(LINE_1, splitGames.get(0).getLogLines().get(0));
+		Assert.assertEquals(LINE_2, splitGames.get(0).getLogLines().get(1));
+		Assert.assertEquals(LINE_3, splitGames.get(1).getLogLines().get(0));
 	}
 }
