@@ -28,4 +28,4 @@ The information extracted from the rules where used to generate some *Classes*:
 4. **PlayerDeathInfo:** holds the death count of a single player grouped by DeathType.
 5. **DeathType:** i.e. means of death.
 
-More useful information can be found at `javadoc`.
+More useful information can be found on `javadoc`.
