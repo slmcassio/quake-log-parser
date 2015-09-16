@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * Deals with the death count for a given Player.
  */
-public class Deaths {
+public class PlayerDeathInfo {
 
 	private final Player player;
 
@@ -18,7 +18,7 @@ public class Deaths {
 	 * @param player
 	 *            The given {@link Player}.
 	 */
-	public Deaths(final Player player) {
+	public PlayerDeathInfo(final Player player) {
 		this.player = player;
 		this.deathTypes = new HashMap<>();
 	}

@@ -3,11 +3,11 @@ package br.com.cassio.quakelog.model;
 /**
  * Deals with the kill count for a given Player.
  */
-public class Kills {
+public class PlayerKillInfo {
 
 	private final Player player;
 
-	private Long count;
+	private Integer count;
 
 	/**
 	 * The constructor.
@@ -15,9 +15,9 @@ public class Kills {
 	 * @param player
 	 *            The given {@link Player}.
 	 */
-	public Kills(final Player player) {
+	public PlayerKillInfo(final Player player) {
 		this.player = player;
-		this.count = 0l;
+		this.count = 0;
 	}
 
 	/**
@@ -34,7 +34,7 @@ public class Kills {
 	 * 
 	 * @return The count.
 	 */
-	public Long getCount() {
+	public Integer getCount() {
 		return this.count;
 	}
 
