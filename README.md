@@ -21,10 +21,10 @@ The solution was based on three major rules:
 				3.1.4. The number 7 represents an item on the  **MeansOfDeath** list.
 				
 The information extracted from the rules where used to generate some *Classes*:				
-1. **Game:** holds all information from a single game
-2. **Player:** represents a single player
-3. **PlayerKillInfo:** holds the kill count of a single player
-4. **PlayerDeathInfo:** holds the death count of a single player grouped by DeathType
-5. **DeathType:** i.e. means of death
+1. **Game:** holds all information from a single game.
+2. **Player:** represents a single player.
+3. **PlayerKillInfo:** holds the kill count of a single player.
+4. **PlayerDeathInfo:** holds the death count of a single player grouped by DeathType.
+5. **DeathType:** i.e. means of death.
 
 Some other useful information can be found on `javadoc`.
