@@ -13,11 +13,11 @@ The solution was based on three major rules:
 
 2. Split the `ClientUserinfoChanged` into **UserId** and **UserName** <br />
 		
-    2.1. e.g. `20:34 ClientUserinfoChanged: 2 n\Isgalamido\t\0\`, **UserId**: 2 and **UserName**: Isgalamido
+    2.1. e.g. `ClientUserinfoChanged: 2 n\Isgalamido\t\0\`, **UserId**: 2 and **UserName**: Isgalamido
 
 3. Analyze the `Kill` line based on the information retrieved from Step2 and discover the **UserName** of the players based on the **UserId**<br />
 		
-    3.1. e.g. `22:06 Kill: 2 3 7`<br />
+    3.1. e.g. `Kill: 2 3 7`<br />
 
     3.1.2. The number 2 represents the **UserId** of the killer player.<br />
 				
