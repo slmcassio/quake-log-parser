@@ -9,7 +9,7 @@ Solution
 ----------------------------------------------------------
 The solution was based on three major rules:
 
-1. Use the `InitGame` tag to delimiter a game.
+1. Use the `InitGame` tag to delimit a game.
 
 2. Split the `ClientUserinfoChanged` into **UserId** and **UserName**
 		
