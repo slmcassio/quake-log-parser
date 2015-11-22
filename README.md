@@ -15,7 +15,7 @@ The solution was based on three major rules:
 		
     2.1. e.g. `ClientUserinfoChanged: 2 n\Isgalamido\t\0\`, **UserId**: [2] and **UserName**: [Isgalamido]
 
-3. Analyze the `Kill` line based on the information retrieved from Step2 and discover the **UserName** of the players based on the **UserId**
+3. Analyze the `Kill` line based with the information retrieved from Step2 and discover the **UserName** of the players based on the **UserId**
 		
     3.1. e.g. `Kill: 2 3 7`
 
