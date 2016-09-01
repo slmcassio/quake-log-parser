@@ -4,7 +4,7 @@ import java.util.regex.Pattern;
 
 public class GameReferences {
 
-	private static final String TIME_PATTERN = "([0-9]*[0-9]:[0-5][0-9])"; // TODO: improve pattern when more examples got available
+	private static final String TIME_PATTERN = "([0-9]*[0-9]:[0-5][0-9])";
 
 	public static final String GAME_START_PATTERN = "InitGame";
 
